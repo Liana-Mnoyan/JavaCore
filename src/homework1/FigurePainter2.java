@@ -3,7 +3,7 @@ package homework1;
 public class FigurePainter2 {
     public static void main(String[] args) {
         for (int x = 0; x < 5; x++) {
-            for (int y = 0; y >=x; y--) {
+            for (int y = 4; y >=x; y--) {
                 System.out.print("*");
             }
             System.out.println();
