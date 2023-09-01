@@ -2,13 +2,15 @@ package homework1;
 
 public class FigurePainter4 {
     public static void main(String[] args) {
-        for (int x = 0; x < 5; x++) {
-            for (int y = 0; y >= x; y--) ;
-            System.out.print(" ");
-            for (int z =1 ; z <= x; z--) {
-            System.out.print("* ");
+        for (int i = 5; i > 0; i--) {
+            for (int j = 0; j < i - 1; j++) {
+                System.out.print(" ");
+                for (int k = 5; k <(5-i); k++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
         }
-        System.out.println();
     }
 }
-}
+
