@@ -7,7 +7,7 @@ public class FigurePainter3 {
                 System.out.print(" ");
 
             for (int z = 0; z <= x; z++) {
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
