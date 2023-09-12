@@ -37,24 +37,44 @@ public class ArrayUtil {
 
         }
         System.out.println();
-//       for (int i = 0; i <= numbers.length; i++) {
-//            if (numbers[i] % 2 == 1) {
-//                System.out.print(i + (" "));
-//
-//         }
-//        }
-                int sum = 0;
-                for (int  i = 0; i < numbers.length; i++)
-                    sum = sum + numbers[i];
-                System.out.println(sum);
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                System.out.print(i + (" "));
 
-                System.out.println();
-                System.out.println("Avarage is" + (" ") + sum / numbers.length);
-
-                System.out.println();
-                System.out.println();
             }
         }
+        System.out.println();
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++)
+            sum = sum + numbers[i];
+        System.out.println(sum);
+
+        System.out.println();
+        System.out.println("Avarage is" + (" ") + sum / numbers.length);
+
+        System.out.println();
+
+ //       if (numbers.length % 2 == 0) {
+ //           System.out.println("Middle numbers" + numbers[numbers.length / 2] -1" "+ numbers[numbers.length/2);
+ //       }
+//qanak hashvely
+        int evenCount = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                evenCount++;
+            }
+        }
+        System.out.println("evenCount" + evenCount);
+        System.out.println();
+        int addCount = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                addCount++;
+            }
+        }
+        System.out.println("addCount" + " " + addCount);
+    }
+}
 
 
 
